@@ -2,6 +2,8 @@ package ua.com.artcode;
 
 
 import static org.junit.Assert.*;
+
+import com.sun.tools.javac.util.GraphUtils;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -19,7 +21,7 @@ public class TestReversion {
     public static void create() {
         head = new Node<>();
         second = new Node<>();
-        third = new Node<>();
+        third = new Node <>();
         fourth = new Node<>();
         fifth = new Node<>();
         sixth = new Node<>();

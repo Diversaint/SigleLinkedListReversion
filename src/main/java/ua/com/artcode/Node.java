@@ -3,6 +3,15 @@ package ua.com.artcode;
 public final class Node<T> implements A<T> {
 
     private T value;
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Node{");
+        sb.append("value=").append(value);
+        sb.append('}');
+        return sb.toString();
+    }
+
     private A<T> next;
 
     public Node() {
